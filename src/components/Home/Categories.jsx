@@ -14,7 +14,6 @@ const Categories = () => {
 			const tempCheck = check.filter((item) => {
 				return !(item === name);
 			});
-
 			setCheck(tempCheck);
 		} else {
 			setCheck([...check, name]);
