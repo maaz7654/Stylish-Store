@@ -15,7 +15,15 @@ const Products = () => {
 		});
 	}, []);
 
-	const temp = items.filter((item) => {
+	const tempItems = items.filter((item) => {
+		if (check.length === 0) {
+			return true;
+		}
+
+		return check.includes(item.category);
+	});
+
+	const temp = tempItems.filter((item) => {
 		return item.title.toLowerCase().includes(str.toLowerCase());
 	});
 

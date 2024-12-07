@@ -8,12 +8,7 @@ export const globalContext = createContext();
 
 const App = () => {
 	const [str, setStr] = useState("");
-	const [check, setCheck] = useState([
-		{ checked: false, name: "electronics" },
-		{ checked: false, name: "jewelry" },
-		{ checked: false, name: "men's clothing" },
-		{ checked: false, name: "women's clothing" },
-	]);
+	const [check, setCheck] = useState([]);
 
 	return (
 		<div className="min-h-screen">
