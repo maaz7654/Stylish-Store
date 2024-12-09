@@ -48,7 +48,7 @@ const Products = () => {
 	};
 
 	return (
-		<div className="grid grid-cols-3 gap-3 p-6 w-3/4">
+		<div className="grid grid-cols-1 md:grid-cols-2 sm:grid-cols-3 gap-3 p-6 w-full sm:w-3/4">
 			{temp.map((item, key) => {
 				return (
 					<div className="border shadow-lg rounded-lg overflow-hidden bg-white">

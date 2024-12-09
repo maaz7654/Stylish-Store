@@ -13,10 +13,10 @@ const Navbar = () => {
 	};
 
 	return (
-		<div className="p-3 px-20 flex justify-between shadow-lg">
+		<div className="px-3 py-2 sm:p-3 sm:px-20 flex justify-between shadow-lg">
 			<Link to={"/"}>
 				<button>
-					<h2 className="font-semibold text-3xl">Stylish Store</h2>
+					<h2 className="font-semibold text-lg sm:text-3xl">Stylish Store</h2>
 				</button>
 			</Link>
 			<div className="flex gap-3 items-center">

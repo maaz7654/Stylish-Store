@@ -4,7 +4,7 @@ import Categories from "../components/Home/Categories";
 
 const Home = () => {
 	return (
-		<div className="flex bg-[#F3F4F6] p-6 min-h-screen">
+		<div className="flex flex-col sm:flex-row bg-[#F3F4F6] p-6 min-h-screen">
 			<Categories />
 			<Products />
 		</div>

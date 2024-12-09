@@ -27,8 +27,8 @@ const Cart = () => {
 	};
 
 	return (
-		<div className="p-12">
-			<h3 className="font-semibold text-3xl ">Your Cart</h3>
+		<div className="p-4 sm:p-12">
+			<h3 className="font-semibold text-lg sm:text-3xl ">Your Cart</h3>
 			{cartItems.length > 0 ? (
 				<div>
 					{cartItems.map((item) => {
@@ -45,8 +45,10 @@ const Cart = () => {
 											className="h-16 w-10"
 										/>
 										<div>
-											<h3 className="font-bold">{item.title}</h3>
-											<div className="flex gap-2 text-gray-500">
+											<h3 className="font-bold text-sm sm:text-2xl">
+												{item.title}
+											</h3>
+											<div className="flex gap-3 sm:gap-2 text-gray-500">
 												<p>${item.price}</p>
 												<p>x {item.quantity}</p>
 											</div>
@@ -65,7 +67,7 @@ const Cart = () => {
 					})}
 					<div className="flex mt-4 justify-between p-3">
 						<h3 className="text-2xl font-bold">Total: ${total.toFixed(2)}</h3>
-						<div className="flex gap-4">
+						<div className="flex flex-col sm:flex-row gap-4">
 							<button
 								className="bg-white border-2 rounded-lg text-black px-3 py-2 hover:bg-gray-200"
 								onClick={handleClearCart}

@@ -23,7 +23,7 @@ const Categories = () => {
 	};
 
 	return (
-		<div className=" bg-white rounded-lg p-4 px-8 space-y-2 w-1/5">
+		<div className=" bg-white rounded-lg p-4 px-8 space-y-2 w-full sm:w-1/5">
 			<h1 className="font-bold text-2xl mb-4">Categories</h1>
 			{cat.map((item) => {
 				return (
